@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Race Registration</title>
+    </head>
+    <body>
+        <h1>Race Registraction</h1>
+        <form action="/somewhere">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required />
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required />
+
+            <p>Select a Race</p>
+            <input type="radio" id="5k" />
+            <label for="5k">5 km</label>
+            <input type="radio" id="10k" />
+            <label for="10k">10 km</label>
+            <input type="radio" id="half_marathon" />
+            <label for="half_marathon">Half Marathon</label>
+            <input type="radio" id="full_marathon" />
+            <label for="full_marathon">Full Marathon</label>
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+            </p>
+
+            <p>
+                <label for="ageGroup">Age Group</label>
+                <select name="ageGroup" id="ageGroup">
+                    <option value="19Under">19 and Under</option>
+                    <option value="20-29">20-29</option>
+                    <option value="30-39">30-39</option>
+                    <option value="40-49">40-49</option>
+                    <option value="50-59">50-59</option>
+                    <option value="60-69">60-69</option>
+                    <option value="70-79">70-79</option>
+                    <option value="80Over">80 and Over</option>
+                </select>
+            </p>
+            <button>Register!</button>
+        </form>
+    </body>
+</html>
