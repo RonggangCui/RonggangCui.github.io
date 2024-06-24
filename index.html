@@ -3,48 +3,308 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Race Registration</title>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <h1>Race Registraction</h1>
-        <form action="/somewhere">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" required />
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" required />
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky mt-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" href="#introduction">About Me</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" href="#experience">Professional Experience</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" href="#selected-projects">Selected Projects</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" href="#all-projects">All Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
-            <p>Select a Race</p>
-            <input type="radio" id="5k" />
-            <label for="5k">5 km</label>
-            <input type="radio" id="10k" />
-            <label for="10k">10 km</label>
-            <input type="radio" id="half_marathon" />
-            <label for="half_marathon">Half Marathon</label>
-            <input type="radio" id="full_marathon" />
-            <label for="full_marathon">Full Marathon</label>
+                <!-- Content -->
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                    <!-- Intro Section -->
+                    <section id="introduction" class="section py-5">
+                        <div class="container">
+                            <div class="section-title text-left mb-4">
+                                <h2>Hello, I am Ronggang!</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-left">
+                                    <p>
+                                        I am a University of Alberta CS Honors Graduate with a passion for software
+                                        development, data analytics, and cloud deployment. With a proven track record in
+                                        delivering high-quality projects and solutions, I bring a combination of
+                                        technical expertise and practical experience to the table.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-            <p>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
+                    <!-- Skills Section -->
+                    <section id="skills" class="section py-5">
+                        <div class="container">
+                            <div class="section-title text-left mb-4">
+                                <h2>Skills</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm border-0 text-center">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Languages</h4>
+                                            <p class="card-text">Javascript, Typescript, Python, Java</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm border-0 text-center">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Web Development</h4>
+                                            <p class="card-text">HTML/CSS, EJS, Bootstrap, React, Ajax, Axios</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm border-0 text-center">
+                                        <div class="card-body">
+                                            <h4 class="card-title">API Development</h4>
+                                            <p class="card-text">NodeJS (Express), Django, SQL, MongoDB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm border-0 text-center">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cloud Solutions</h4>
+                                            <p class="card-text">AWS, Google Cloud (Big Query, Cloud Functions)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm border-0 text-center">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Data Analytics</h4>
+                                            <p class="card-text">Microsoft SQL Server, Tableau, Power BI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm border-0 text-center">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Soft Skills</h4>
+                                            <p class="card-text">
+                                                Agile Project Management, SCRUM, Sprint Planning, CI/CD
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required />
-            </p>
+                    <!-- Professional Experience Section -->
+                    <section id="experience" class="section py-5">
+                        <div class="container">
+                            <div class="section-title text-left mb-4">
+                                <h2>Professional Experience</h2>
+                            </div>
+                            <div class="row">
+                                <!-- Web Application Teaching Assistant -->
+                                <div class="col-12 mb-4">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Web Application Teaching Assistant</h4>
+                                            <p class="card-subtitle mb-2 text-muted">
+                                                <strong>University of Alberta</strong> - January 2024 to April 2024
+                                            </p>
+                                            <div class="job-description">
+                                                <p>
+                                                    - Facilitated hands-on workshops on
+                                                    <b>network security, RESTful API development</b>, and
+                                                    <b>cloud deployment</b> with Heroku and other Cloud services
+                                                </p>
+                                                <p>
+                                                    - Delivered tutorials on developing models, serializers, and RESTful
+                                                    API endpoints with <b>Django</b>
+                                                </p>
+                                                <p>
+                                                    - Provided mentorship and supervised five student teams on project
+                                                    development and management by hosting regular stand-up meetings
+                                                    following
+                                                    <b>Agile principles</b>
+                                                </p>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <div class="col-md-6 text-center mb-4">
+                                                    <a href="https://uofa-cmput404.github.io/">
+                                                        <img
+                                                            src="assets/demo_image_4.png"
+                                                            class="img-fluid"
+                                                            alt="Description of image 1"
+                                                            style="
+                                                                height: 200px;
+                                                                width: 100%;
+                                                                object-fit: contain;
+                                                                margin-bottom: 10px;
+                                                                background-color: white;
+                                                            " />
+                                                        <p class="mt-2">Course Webpage</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 text-center mb-4">
+                                                    <a href="https://www.youtube.com/watch?v=8GEz2nILBvY">
+                                                        <img
+                                                            src="assets/demo_image_5.png"
+                                                            class="img-fluid"
+                                                            alt="Description of image 2"
+                                                            style="
+                                                                height: 200px;
+                                                                width: 100%;
+                                                                object-fit: contain;
+                                                                margin-bottom: 10px;
+                                                                background-color: white;
+                                                            " />
+                                                        <p class="mt-2">Student Group Project Showcase</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Data Engineering Intern -->
+                                <div class="col-12 mb-4">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Data Engineering Intern</h4>
+                                            <p class="card-subtitle mb-2 text-muted">
+                                                <strong>City of Edmonton, Municipal Government</strong> - May 2023 to
+                                                December 2023
+                                            </p>
+                                            <div class="job-description">
+                                                <p>
+                                                    - Developed <b>data processing pipelines</b> to track KPIs for teams
+                                                    involved with operations linked to a $100 million budget, enhancing
+                                                    oversight and reporting accuracy through improved data-driven
+                                                    decision-making
+                                                </p>
+                                                <p>
+                                                    - Optimized <b>ETL</b> processes, reducing the runtime from 15 to 5
+                                                    minutes using <b>JavaScript</b> and <b>Python</b>, improving data
+                                                    availability for operational team leads
+                                                </p>
+                                                <p>
+                                                    - Designed and executed queries on <b>Microsoft SQL Server</b> and
+                                                    <b>Google BigQuery</b> to extract insights, enabling informed
+                                                    business decisions and enhancing strategic planning
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Software Developer Intern -->
+                                <div class="col-12 mb-4">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Software Developer Intern</h4>
+                                            <p class="card-subtitle mb-2 text-muted">
+                                                <strong>Zero Ramp Up Technologies</strong> - September 2022 to December
+                                                2022
+                                            </p>
+                                            <div class="job-description">
+                                                <p>
+                                                    - Developed <b>REST APIs</b> for product customization and
+                                                    purchasing features using <b>NodeJS</b> and <b>PostgreSQL</b>,
+                                                    enhancing system functionality and user experience
+                                                </p>
+                                                <p>
+                                                    - Engineered front-end components using <b>React</b>, ensuring
+                                                    optimal integration and performance through <b>Ajax</b> for a more
+                                                    dynamic and responsive user interface
+                                                </p>
+                                                <p>
+                                                    - Collaborated in pair programming to tackle complex algorithmic
+                                                    challenges, improving code quality and solution efficiency in a team
+                                                    setting
+                                                </p>
+                                            </div>
+                                            <div class="row mt-4">
+                                                <div class="col-md-4 text-center mb-4">
+                                                    <a
+                                                        href="https://drive.google.com/file/d/1ZwNzIJFjr1Yl9pSx0dgllzTr9Q1x-RaK/view?usp=drive_link">
+                                                        <img
+                                                            src="assets/demo_image_1.png"
+                                                            class="img-fluid"
+                                                            alt="Description of image 1"
+                                                            style="
+                                                                height: 200px;
+                                                                width: 100%;
+                                                                object-fit: contain;
+                                                                margin-bottom: 10px;
+                                                                background-color: white;
+                                                            " />
+                                                        <p class="mt-2">Product Demo Video</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 text-center mb-4">
+                                                    <a
+                                                        href="https://drive.google.com/file/d/1VObOwJnqQ6cSHyN6ezipa_kaHHSgZrw6/view?usp=sharing">
+                                                        <img
+                                                            src="assets/demo_image_2.png"
+                                                            class="img-fluid"
+                                                            alt="Description of image 2"
+                                                            style="
+                                                                height: 200px;
+                                                                width: 100%;
+                                                                object-fit: contain;
+                                                                margin-bottom: 10px;
+                                                                background-color: white;
+                                                            " />
+                                                        <p class="mt-2">User Manual</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 text-center mb-4">
+                                                    <a
+                                                        href="https://ualberta-cmput401.github.io/dev-in-a-box/project-management/">
+                                                        <img
+                                                            src="assets/demo_image_3.png"
+                                                            class="img-fluid"
+                                                            alt="Description of image 3"
+                                                            style="
+                                                                height: 200px;
+                                                                width: 100%;
+                                                                object-fit: contain;
+                                                                margin-bottom: 10px;
+                                                                background-color: white;
+                                                            " />
+                                                        <p class="mt-2">Internal Project Management Page</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
 
-            <p>
-                <label for="ageGroup">Age Group</label>
-                <select name="ageGroup" id="ageGroup">
-                    <option value="19Under">19 and Under</option>
-                    <option value="20-29">20-29</option>
-                    <option value="30-39">30-39</option>
-                    <option value="40-49">40-49</option>
-                    <option value="50-59">50-59</option>
-                    <option value="60-69">60-69</option>
-                    <option value="70-79">70-79</option>
-                    <option value="80Over">80 and Over</option>
-                </select>
-            </p>
-            <button>Register!</button>
-        </form>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
