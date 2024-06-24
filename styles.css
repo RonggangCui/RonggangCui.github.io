@@ -21,3 +21,17 @@
 .sidebar a:hover {
     background-color: #ddd;
 }
+
+.full-width-underline {
+    position: relative;
+}
+
+.full-width-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline as needed */
+    background-color: currentColor; /* This uses the current text color */
+}
