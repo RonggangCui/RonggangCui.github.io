@@ -5,29 +5,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div class="container-fluid">
             <div class="row">
                 <!-- Sidebar -->
-                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                    <div class="sidebar-sticky mt-3">
-                        <ul class="nav flex-column">
+                <nav class="col-md-2 d-none d-md-block bg-dark text-white sidebar">
+                    <div class="sidebar-sticky mt-3 text-center">
+                        <img
+                            src="assets/profile_photo.jpeg"
+                            class="rounded-circle mb-3"
+                            alt="Profile Image"
+                            width="100"
+                            height="100" />
+                        <div class="display-4 text-center">
+                            <a class="text-white" href="#" style="font-size: 2rem">Ronggang</a>
+                        </div>
+                        <div class="text-center row justify-content-center">
+                            <a href="https://github.com/RonggangCui" target="_blank" class="text-white mx-1">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ronggang-cui/" target="_blank" class="text-white mx-1">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                        <ul class="nav flex-column text-left">
                             <li class="nav-item mt-1">
-                                <a class="nav-link" href="#introduction">About Me</a>
+                                <a class="nav-link text-white" href="#introduction">About Me</a>
                             </li>
                             <li class="nav-item mt-1">
-                                <a class="nav-link" href="#skills">Skills</a>
+                                <a class="nav-link text-white" href="#skills">Skills</a>
                             </li>
                             <li class="nav-item mt-1">
-                                <a class="nav-link" href="#experience">Professional Experience</a>
+                                <a class="nav-link text-white" href="#experience">Professional Experience</a>
                             </li>
                             <li class="nav-item mt-1">
-                                <a class="nav-link" href="#selected-projects">Selected Projects</a>
+                                <a class="nav-link text-white" href="#selected-projects">Selected Projects</a>
                             </li>
                             <li class="nav-item mt-1">
-                                <a class="nav-link" href="#all-projects">All Projects</a>
+                                <a class="nav-link text-white" href="#all-projects">All Projects</a>
                             </li>
                         </ul>
                     </div>
@@ -36,7 +56,7 @@
                 <!-- Content -->
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                     <!-- Intro Section -->
-                    <section id="introduction" class="section py-5">
+                    <section id="introduction" class="section py-5 bg-light">
                         <div class="container">
                             <div class="section-title text-left mb-4">
                                 <h2>Hello, I am Ronggang!</h2>
@@ -55,7 +75,7 @@
                     </section>
 
                     <!-- Skills Section -->
-                    <section id="skills" class="section py-5">
+                    <section id="skills" class="section py-5 bg-light">
                         <div class="container">
                             <div class="section-title text-left mb-4">
                                 <h2>Skills</h2>
@@ -116,7 +136,7 @@
                     </section>
 
                     <!-- Professional Experience Section -->
-                    <section id="experience" class="section py-5">
+                    <section id="experience" class="section py-5 bg-light">
                         <div class="container">
                             <div class="section-title text-left mb-4">
                                 <h2>Professional Experience</h2>
